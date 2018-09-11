@@ -15,13 +15,13 @@ public class BMI_Project {
             name = keyboard.nextLine();
             System.out.println("Nice to meet you "+name+". Now could you tell me how much you weigh in pounds?");
             weight = keyboard.nextFloat();
-            System.out.println("Okay, the next step is to tell me your height in inches.");
+            System.out.println("Okay, the next step is to tell me your height in feet.");
             height = keyboard.nextFloat();
             System.out.println("Alright. ");
 
 
 
-            System.out.println("Your BMI is "+((weight/(height)/height)*703)+".");
+            System.out.println("Your BMI is "+(703*((weight/((height*12)*(height*12)))))+".");
         }
 
 
